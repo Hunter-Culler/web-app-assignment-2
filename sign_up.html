@@ -1,0 +1,196 @@
+<!--
+	Ian Anderson and Hunter Culler
+	University of Colorado Denver CSCI 4800 E01
+	Web Application Developement
+	Group Assignmnet 1
+
+	February 26th, 2021
+
+	Status = Page connections not integrated yet, further styling required
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Social Media Website</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assignment1.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-custom">
+			<div class="container-fluid">
+			  <div class="navbar-header">
+				<a class="navbar-brand" href="#">Social Media Website</a>
+			  </div>
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="#" style="color:white">Home</a></li>
+				  <li class="active"><a href="#" style="color:white">Messages</a></li>
+				  <li class="active"><a href="#" style="color:white">Profile</a></li>
+				  <li class="active"><a href="#" style="color:white">Friends</a></li>
+			  </ul>
+			</div>
+		</nav>
+
+		<header>
+			<h1>Profile sign up page</h1>
+		</header>
+
+		<section>
+			<h4>Please Start by filling out the following form:</h4>
+			<h5>(*) denotes a required field</h5>
+			<article>
+				<form>
+					<fieldset class = "border">
+						<div class = "form-group row">
+							<div class = "col-sm-2">
+								<label for = "txtFirstname" class = "col-form-label">
+									<span>First Name: * </span>
+								</label>
+							</div>
+							<div class = "col-sm-10">
+								<input type = "text" id = "txtFirstname" name = "txtFirstname" required class = "form-control" placeholder = "First Name">
+							</div>
+						</div>
+
+						<div class = "form-group row">
+							<div class = "col-sm-2">
+								<label for = "txtLastname" class = "col-form-label">
+									<span>Last Name: * </span>
+								</label>
+							</div>
+							<div class = "col-sm-10">
+								<input type = "text" id = "txtLastname" name = "txtFirstname" required class = "form-control" placeholder = "Last Name">
+							</div>
+						</div>
+
+						
+						<div class = "row form-group" >
+							<label for = "txtDOB" class="col-sm-2 col-form-label" >
+								Date of Birth: * 
+							</label>
+							<div class = "col-sm-10" > 
+								<input type = "date" id = txtDOB name  = "txtDOB" required class = "form-control">
+							</div>
+						</div>
+
+						
+
+						<fieldSet class="border-form-group">
+							<div class="row">
+								<legend class="col-sm-2 col-form-label">Gender: </legend>
+								<div class="col-sm-2">
+									<div class="form-check">
+										<input type="radio" id="rbMale" name="gender" value="male" class = "form-check-input">
+										<label for="rbMale" class = "form-check-label">Male</label>
+									</div>
+							
+									<div class="form-check">
+										<input type="radio" id="rbFemale" name="gender" value="female" class = "form-check-input">
+										<label for="rbFemale" class = "form-check-label">Female</label>
+									</div>
+							
+									<div class="form-check">
+										<input type="radio" id="rbOther" name="gender" value="other" class = "form-check-input">
+										<label for="rbOther" class = "form-check-label">Other</label>
+									</div>
+								</div>
+							</div>
+						</fieldSet>
+
+						<div class = "row form-group">
+							<label for = "txtTel" class = "col-sm-2 col-form-label">
+								Telephone: 
+							</label>
+							<div class = "col-sm-10"> 
+								<input type = "tel" id = "txtTel" name = "txtTel" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" class = "form-control" placeholder = "123-456-7890">
+							</div>
+						</div>
+						
+						<div class="row form-group">
+							<label for="txtEmail" class="col-sm-2 col-form-label">
+								Email: *
+							</label>
+							<div class="col-sm-10">
+								<input type="email" id="txtEmail" name="txtEmail" required class="form-control"
+									placeholder="myemail@website.com">
+							</div>
+						</div>
+						
+						<div class="row form-group">
+							<label for="txtAddress" class="col-sm-2 col-form-label">Address: </label>
+							<div class="col-md-12 col-lg-6">
+								<input type="text" id = "txtAddress" name="txtAddress" class = "form-control" placeholder="Street">
+							</div>
+
+							<div class="col">
+								<input type="text" id = "txtCity" name = "txtCity" class = "form-control" placeholder="City">
+							</div>
+
+							<div class="col">
+								<input type="text" id = "txtState" name = "txtState" class = "form-control" placeholder="State">
+							</div>
+
+							<div class="col">
+								<input type="text" id = "txtZipcode" name = "txtZip" class = "form-control" placeholder="Zipcode" pattern = "[0-9]{5}">
+							</div>
+						</div>
+
+						<div class = "form-group row">
+							<div class = "col-sm-2">
+								<label for = "txtUsername" class = "col-form-label">
+									<span>Username: * </span>
+								</label>
+							</div>
+							<div class = "col-sm-10">
+								<input type = "text" id = "txtUsername" name = "txtUsername" required class = "form-control" placeholder = "Username">
+							</div>
+						</div>
+
+						<div class = "form-group row">
+							<div class = "col-sm-2">
+								<label for = "txtPassword" class = "col-form-label">
+									<span>Password: * </span>
+								</label>
+							</div>
+							<div class = "col-sm-10">
+								<input type = "password" id = "txtPassword" name = "txtPassword" required class = "form-control" placeholder = "Password">
+							</div>
+						</div>
+
+						<!--  FIXME: add gunctionality to make sure both passwords match before submission-->
+						<div class = "form-group row">
+							<div class = "col-sm-2">
+								<label for = "txtConfirmPassword" class = "col-form-label">
+									<span>Confirm Password: * </span>
+								</label>
+							</div>
+							<div class = "col-sm-10">
+								<input type = "password" id = "txtConfirmPassword" name = "txtConfirmPassword" required class = "form-control" >
+							</div>
+						</div>
+
+					</fieldset>
+
+					<p>
+						<button type = "submit" class = "btn btn-primary">Submit</button>
+						<button type = "reset" class = "btn btn-secondary">Reset</button>
+					</p>
+				</form>
+			</article>
+		</section>
+		<footer class="footer">
+			<p><a href="#" class="text-primary">Contact Us</a></p>
+			<p><a href="#" class="text-primary">Another link</a></p>
+			<p><a href="#" class="text-primary">One More link</a></p>
+			Copyright @2021 Ian Anderson and Hunter Culler
+
+		</footer>
+
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	</body>
+</html>

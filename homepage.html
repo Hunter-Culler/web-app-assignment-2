@@ -1,0 +1,104 @@
+<!--
+	Ian Anderson and Hunter Culler
+	University of Colorado Denver CSCI 4800 E01
+	Web Application Developement
+	Group Assignmnet 1
+
+	February 26th, 2021
+
+	Status = Page connections not integrated yet, further styling required
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Social Media Website</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="assignment1.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-custom">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#">Social Media Website</a>
+			</div>
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="#" style="color:white">Home</a></li>
+				<li class="active"><a href="#" style="color:white">Messages</a></li>
+				<li class="active"><a href="#" style="color:white">Profile</a></li>
+				<li class="active"><a href="#" style="color:white">Friends</a></li>
+			</ul>
+			<div class="form-group row" style="margin-top: 12px">
+				<div class="col-sm-3">
+					<input type="text" id="txtSearch" name="txtSearch" class="form-control" placeholder="Search">
+				</div>
+				<div class="col-sm-2">
+					<button type="submit" class="btn btn-primary">Search</button>
+				</div>
+			</div>
+		  </div>
+		</nav>
+
+		<div class="feed">
+			<div class="row">
+				<div class="post">
+					<div class="post header">
+						<img src="http://www.sheffield.com/wp-content/uploads/2013/06/placeholder.png" alt="Avatar" class="avatar">Hunter Culler
+					</div>
+					<div class="post content">
+						Hello everyone!
+					</div>
+					<div class="post entry">
+						<div class="form-group row">
+							<div class="col-sm-8">
+								<input type="text" id="txtComment" name="txtComment" class="form-control" placeholder="Comment here">
+							</div>
+							<div class="col-sm-2">
+								<button type="submit" class="btn btn-primary">Comment</button>
+							</div>
+						</div>
+						</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="post">
+					<div class="post header">
+						<img src="http://www.sheffield.com/wp-content/uploads/2013/06/placeholder.png" alt="Avatar" class="avatar">Zach Meyers
+					</div>
+					<div class="post content">
+						Going camping this weekend, who wants to go?
+					</div>
+					<div class="post comment">
+						<img src="http://www.sheffield.com/wp-content/uploads/2013/06/placeholder.png" alt="Avatar" class="post comment avatar">Hunter Culler
+						<div class="post comment text">Sounds good!</div>
+					</div>
+					<div class="post comment">
+						<img src="http://www.sheffield.com/wp-content/uploads/2013/06/placeholder.png" alt="Avatar" class="post comment avatar">Dillon Clark
+						<div class="post comment text">Can't make it, have fun!</div>
+					</div>
+					<div class="post entry">
+						<div class="form-group row">
+							<div class="col-sm-8">
+								<input type="text" id="txtComment" name="txtComment" class="form-control" placeholder="Comment here">
+							</div>
+							<div class="col-sm-2">
+								<button type="submit" class="btn btn-primary">Comment</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<p><a href="#" class="text-primary">Contact Us</a></p>
+			<p><a href="#" class="text-primary">Another link</a></p>
+			<p><a href="#" class="text-primary">One More link</a></p>
+			Copyright @2021 Ian Anderson and Hunter Culler
+		</footer>
+	</body>
+</html>

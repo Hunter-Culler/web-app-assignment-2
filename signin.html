@@ -1,0 +1,80 @@
+<!--
+	Ian Anderson and Hunter Culler
+	University of Colorado Denver CSCI 4800 E01
+	Web Application Developement
+	Group Assignmnet 1
+
+	February 26th, 2021
+
+	Status = Page connections not integrated yet, further styling required
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Social Media Website</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="assignment1.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-custom">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#">Social Media Website</a>
+			</div>
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="#" style="color:white">Sign In</a></li>
+			  <li class="active"><a href="#" style="color:white">Create Account</a></li>
+			</ul>
+		  </div>
+		</nav>
+
+		<header>
+			<h2>Sign in</h2>
+		</header>
+		
+		<section>
+			<form>
+				<div class="container">
+					<fieldset>
+						<div class="form-group row">
+							<div class="col-sm-3">
+								<label for="txtUsername" class="col-form-label">
+									<span>Username:</span>
+								</label>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" id="txtUsername" name="txtUsername" class="form-control" placeholder="Username" required>
+							</div>
+						</div>
+						
+						<div class="form-group row">
+							<div class="col-sm-3">
+								<label for="txtPassword" class="col-form-label">
+									<span>Password:</span>
+								</label>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" id="txtPassword" name="txtPassword" class="form-control" placeholder="Password" required>
+							</div>
+						</div>
+						
+						<div>
+							<button type="submit" class="btn btn-primary">Sign in</button>
+							<a href="#" class="text-primary">Create Account</a>
+						</div>
+					</fieldset>
+				</div>
+			</form>
+		</section>
+		<footer class="footer">
+			<p><a href="#" class="text-primary">A link</a></p>
+			<p><a href="#" class="text-primary">Another link</a></p>
+			<p><a href="#" class="text-primary">One More link</a></p>
+			Copyright @2021
+		</footer>
+	</body>
+</html>
