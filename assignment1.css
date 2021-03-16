@@ -1,5 +1,12 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css");
+.invisible {
+	display: none;
+}
 
+.content{
+	height: 700px;
+	overflow-y: scroll;
+}
 .container {
 	height: 400px;
 	width: 400px;
