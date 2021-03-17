@@ -46,8 +46,18 @@
                 </div>
             </fieldset>
         </form>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <button type="submit" class="btn btn-primary" onclick="mountedApp.nextPage()">Next Page</button>
+                <button type="submit" class="btn btn-secondary" onclick="mountedApp.prevPage()">Previous Page</button>
+            </div>
+        </div>
+        
         <div id="mainDiv">
-            <div class="row col-sm-5" v-if="result != null">found {{ (result != null)?result.totalItems:'' }}</div>
+            <!--<div class="row col-sm-5" v-if="result != null">found {{ (result != null)?result.totalItems:'' }}</div>-->
+
+            <div class="row col-sm-5" v-if="result != null">{{ (result != null)?result.totalItems:'' }} results remaining</div>
             <div class="row">
                 <book-display v-if="result != null" v-for="(book, index) in result.items" :key="book.id" :book="JSON.stringify(book)"></book-display>
             </div>
