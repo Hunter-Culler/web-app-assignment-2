@@ -18,6 +18,7 @@ const app = Vue.createApp({
     },
     methods: {
         searchGoogleBooks() {
+            //use this line for pagenation
             fetch('https://www.googleapis.com/books/v1/volumes?q=' + this.keyword + "&startIndex=0&maxResults=20")
                 .then(response => response.json())
                 .then(json => this.result = json)

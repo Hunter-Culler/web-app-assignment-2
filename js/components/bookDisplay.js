@@ -25,6 +25,9 @@ app.component('book-display', {
         <li class="list-group-item">   <img v-bind:src="this.bookObj.volumeInfo.imageLinks.smallThumbnail" class="imageproduit" />  </li>
         <li class="list-group-item"> {{this.bookObj.volumeInfo.authors}} </li>
         <li class="list-group-item"> {{this.bookObj.volumeInfo.publisher}}, {{this.bookObj.volumeInfo.publishedDate}} </li>
+        <li class="list-group-item"> {{this.bookObj.volumeInfo.printType}} </li>
+        <li class="list-group-item"> {{this.bookObj.volumeInfo.description}} </li>
+        
         </ul>`,
 
     computed: {
