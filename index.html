@@ -25,7 +25,7 @@
 
 <body>
     <div id="app">
-        <form @submit.prevent="searchGoogleBooks">
+        <form @submit.prevent="searchGoogleBooks" >
             <fieldset class="border">
                 <legend class="w-auto">Google Books Search</legend>
                 <div class="row form-group">
@@ -49,8 +49,8 @@
 
         <div class="row">
             <div class="col-sm-4">
-                <button type="submit" class="btn btn-primary" onclick="mountedApp.nextPage()">Next Page</button>
-                <button type="submit" class="btn btn-secondary" onclick="mountedApp.prevPage()">Previous Page</button>
+                <button type="submit" class="btn btn-warning disabled" disabled="disabled" id="next" onclick="mountedApp.nextPage()">Next Page</button>
+                <button type="submit" class="btn btn-warning disabled" disabled="disabled" id="prev" onclick="mountedApp.prevPage()">Previous Page</button>
             </div>
         </div>
         
@@ -64,6 +64,8 @@
 
         </div>
     </div>
+
+    <h8>Copyright 2021 Ian Anderson and Hunter Culler</h8>
 
     
 
