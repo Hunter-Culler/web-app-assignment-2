@@ -60,18 +60,21 @@
         <div id="mainDiv">
             <!--<div class="row col-sm-5" v-if="result != null">found {{ (result != null)?result.totalItems:'' }}</div>-->
 
-            <div class="row col-sm-5 col-md-4 col-lg-3 col-xl-2" v-if="result != null">{{ (result != null)?result.totalItems:'' }} results
-                remaining</div>
+            <div class="row col-sm-5 col-md-4 col-lg-3 col-xl-2" v-if="result != null">
+                {{ (result != null)?result.totalItems:'' }} results remaining
+            </div>
+
             <div class="row">
                 <book-display v-if="result != null" v-for="(book, index) in result.items" :key="book.id"
-                    :book="JSON.stringify(book)"></book-display>
+                    :book="JSON.stringify(book)">
+                </book-display>
             </div>
 
         </div>
     </div>
 
     <div>
-        <footer>Copyright 2021 Ian Anderson and Hunter Culler</footer>
+        <footer>Copyright @2021 Ian Anderson and Hunter Culler</footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -94,7 +97,5 @@
 
     
 </body>
-
-
 
 </html>
