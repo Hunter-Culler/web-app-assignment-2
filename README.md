@@ -72,7 +72,14 @@ Part 2 @Hunter Culler:
 
 signin, signup, and homepage are all modeled after facebooks style template.
 
-Three validation checks added to the signup page to verify user info.
+---Input Validation---
+Added validation to the sign-up page. This consists of 2 functions, one which checks all inputs
+for disallowed characters and the date of birth section for valid input. The second function, which is called by the first, 
+performs the password validation (checking in password and confirmPassword match, making sure neither is blank, and
+checking if password has 1 lowercase, 1 uppercase, and 1 number).
 
-Form layout changes dynamically
+---Page Dyncamicity---
+Added dynamicity to the security question section of the sign-up page. Now you are provided with 
+a drop down menu of questions,a nd when you ahve selected one the text entry field for your answer 
+is displayed. 
 

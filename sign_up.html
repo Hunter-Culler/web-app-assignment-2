@@ -42,7 +42,7 @@
 			<h4>Please Start by filling out the following form:</h4>
 			<h5>(*) denotes a required field</h5>
 			<article>
-				<form>
+				<form onsubmit="return validateForm()" id="mainForm" novalidate>
 					<fieldset class = "border">
 						<div class = "form-group row">
 							<div class = "col-sm-2">
@@ -73,6 +73,7 @@
 							</label>
 							<div class = "col-sm-10" > 
 								<input type = "date" id = txtDOB name  = "txtDOB" required class = "form-control">
+								<div id="divDoBError" class="col-sm-5 invisible errorMessage"></div>
 							</div>
 						</div>
 
